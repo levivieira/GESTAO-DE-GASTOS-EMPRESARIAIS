@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Gastos Empresariais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gerenciador de Gastos Empresariais</h1>
+
+  <div id="form-container">
+    <h2>Adicionar Despesa</h2>
+    <form id="despesa-form">
+      <input type="text" id="descricao" placeholder="Descrição" required>
+      <input type="text" id="categoria" placeholder="Categoria" required>
+      <input type="number" id="valor" placeholder="Valor" required>
+      <input type="date" id="data" required>
+      <button type="submit">Adicionar</button>
+    </form>
+  </div>
+
+  <div id="tabela-despesas-container">
+    <h2>Despesas Registradas</h2>
+    <table id="tabela-despesas">
+      <thead>
+        <tr>
+          <th>Descrição</th>
+          <th>Categoria</th>
+          <th>Valor</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As despesas serão adicionadas dinamicamente aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
